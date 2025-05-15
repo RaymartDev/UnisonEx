@@ -40,13 +40,13 @@ cd server
 npm run dev
 ```
 
-While on (CD Server)
+While on (CD Server) ( to reflect the database to prisma schema )
 ```javascript
 npx prisma generate
 npx prisma db push
 ```
 
-#### Install frontend modules
+#### Run frontend in another cmd ( both server and frontend must be running )
 
 ```javascript
 cd frontend
