@@ -20,6 +20,14 @@ cd frontend
 npm install
 ```
 
+create .env file and replace database url to necessary info
+
+```javascript
+NODE_ENV=development
+PORT=5000
+DATABASE_URL="mysql://<username>:<password>@<host>:<port>/<database/schema>"
+```
+
 
 #### How to run
 
@@ -30,6 +38,12 @@ npm install
 ```javascript
 cd server
 npm run dev
+```
+
+While on (CD Server)
+```javascript
+npx prisma generate
+npx prisma db push
 ```
 
 #### Install frontend modules
